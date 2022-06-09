@@ -4,7 +4,7 @@ import Project from "../components/Project";
 export default function ProjectPage() {
   return (
     <div className="backgroundImage ">
-      <div className="flex w-9/12 h-max ml-auto gap-6 mt-10 justify-center">
+      <div className="flex w-9/12 h-max ml-auto gap-6  justify-center">
         <Project />
         <Project />
         <Project />

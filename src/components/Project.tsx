@@ -1,8 +1,17 @@
-import React from "react";
+import { useState } from "react";
+import { IconContext } from "react-icons";
+import { FiGithub } from "react-icons/fi";
+import { FiLink } from "react-icons/fi";
 
 export default function Project() {
+  const [linksOn, setLinksOn] = useState(false);
+
   return (
-    <div className="relative grid w-[330px] h-max border-2 border-[#586369] rounded-md mt-6">
+    <div
+      onMouseEnter={() => setLinksOn(true)}
+      onMouseLeave={() => setLinksOn(false)}
+      className="relative grid w-[330px] h-max border-2 border-darkGrey rounded-md mt-20"
+    >
       <div>
         <img src="\IMG_3133.JPG" alt="project" />
         <div>
@@ -18,7 +27,27 @@ export default function Project() {
           </ul>
         </div>
       </div>
-      <div className="absolute bg-[#586369]/70 top-0 bottom-0 right-0 left-0"></div>
+
+      {linksOn && (
+        <div className="absolute grid place-content-center bg-darkGrey/60 top-0 bottom-0 right-0 left-0">
+          <IconContext.Provider value={{ color: "white", size: "2rem" }}>
+            <div className="flex gap-8">
+              <div className=" has-tooltip border-2 border-white rounded-full p-2 cursor-pointer">
+                <span className="tooltip rounded shadow-lg p-1 bg-darkGrey/90 border-2 border-white text-white -mt-[4.5rem] w-[3.5rem] text-xs">
+                  Click for Github Code
+                </span>
+                <FiGithub />
+              </div>
+              <div className=" has-tooltip border-2 border-white rounded-full p-2 cursor-pointer">
+                <span className="tooltip rounded shadow-lg p-1 bg-darkGrey/90 border-2 border-white text-white -mt-[4.5rem] w-[3.5rem] text-xs">
+                  Click for Project Page
+                </span>
+                <FiLink />
+              </div>
+            </div>
+          </IconContext.Provider>
+        </div>
+      )}
     </div>
   );
 }
