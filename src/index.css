@@ -9,4 +9,13 @@
   height: 100vh;
   width: 100vw;
 }
+
+.listItem {
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: #586369;
+  width: max-content;
+}
 @tailwind utilities;
