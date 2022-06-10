@@ -8,7 +8,7 @@ import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   return (
-    <div className="bg-black h-screen w-screen overflow-x-hidden">
+    <div className="bg-[#f2f2f4] h-screen w-screen overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -15,10 +15,18 @@ export default function HomePage() {
       </div>
       <IconContext.Provider value={{ color: "#586369", size: "2rem" }}>
         <div className="flex gap-6 mt-6 justify-center">
-          <a href="https://github.com/DKapteyn">
+          <a
+            href="https://github.com/DKapteyn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsGithub />
           </a>
-          <a href="https://www.linkedin.com/in/david-kapteyn-11b4b361/">
+          <a
+            href="https://www.linkedin.com/in/david-kapteyn-11b4b361/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsLinkedin />
           </a>
         </div>
