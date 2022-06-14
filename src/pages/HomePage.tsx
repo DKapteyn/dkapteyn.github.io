@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 
 export default function HomePage() {
   return (
-    <div className="backgroundImage grid place-content-center ">
+    <div className="backgroundImage lg:bg-left grid place-content-center ">
       <HomeMain />
       <div className=" flex gap-4 mt-6">
         <Button writing="Check out my work" link={"/projects"} />

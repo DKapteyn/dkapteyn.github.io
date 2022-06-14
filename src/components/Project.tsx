@@ -18,15 +18,19 @@ export default function Project({
     <div
       onMouseEnter={() => setLinksOn(true)}
       onMouseLeave={() => setLinksOn(false)}
-      className="relative flex w-[18.75rem] h-[31.25rem]  border-2 border-darkGrey rounded-md mt-20"
+      className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] border-2 border-darkGrey 
+      rounded-md  mt-10 first:mt-20 lg:mt-20 mx-3"
     >
-      <div>
-        <img className="mt-2" src={img} alt="project" />
+      <div className="flex  flex-col justify-between">
         <div className="flex flex-col items-center ">
+          <img className="mt-2" src={img} alt="project" />
+
           <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
           <p className="text-center mb-4 ">{para}</p>
-          <p className="font-bold">Skills used in this project</p>
-          <ul className="flex flex-wrap gap-4 justify-center mt-4 mb-4">
+        </div>
+        <div className="flex flex-col items-center mt-4 mb-10">
+          <p className="font-bold mb-4">Skills used in this project</p>
+          <ul className="flex flex-wrap gap-4 ">
             {skills.map((skill) => (
               <li className="listItem">{skill}</li>
             ))}
