@@ -1,6 +1,7 @@
 export type buttonT = {
   writing: string;
-  link: string;
+  link?: string;
+  a?: string;
 };
 
 export type projectT = {

@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 export default function HomeMain() {
   return (
     <div className=" text-2xl text-center">

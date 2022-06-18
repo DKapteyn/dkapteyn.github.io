@@ -23,8 +23,9 @@ export default function Project({
     >
       <div className="flex  flex-col justify-between">
         <div className="flex flex-col items-center ">
-          <img className="mt-2" src={img} alt="project" />
-
+          <div className="h-3/5 p-5">
+            <img className="mt-2" src={img} alt="project" />
+          </div>
           <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
           <p className="text-center mb-4 ">{para}</p>
         </div>

@@ -19,6 +19,7 @@ export default function HomePage() {
             href="https://github.com/DKapteyn"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:bg-black rounded-full"
           >
             <BsGithub />
           </a>
@@ -26,6 +27,7 @@ export default function HomePage() {
             href="https://www.linkedin.com/in/david-kapteyn-11b4b361/"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:bg-black rounded-full"
           >
             <BsLinkedin />
           </a>
