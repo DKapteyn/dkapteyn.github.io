@@ -13,6 +13,7 @@ export default function HomePage() {
         <Button writing="Check out my work" link={"/projects"} />
         <Button writing="Contact me" link={"/contact"} />
       </div>
+      {/*throws parsing issue but is still best practive to have size in relative units for accessibility */}
       <IconContext.Provider value={{ color: "#586369", size: "2rem" }}>
         <div className="flex gap-6 mt-6 justify-center">
           <a

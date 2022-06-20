@@ -34,4 +34,9 @@ body {
 .formText {
   @apply w-[29.0625rem] mx-auto  mb-8 shadow-md px-2;
 }
+
+.button {
+  @apply rounded-lg grid place-items-center leading-none text-base w-40 h-12 border-2 border-[#586369] text-center 
+  hover:scale-105 hover:border-black;
+}
 @tailwind utilities;

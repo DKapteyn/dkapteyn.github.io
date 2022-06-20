@@ -32,7 +32,7 @@ export default function ProjectPage() {
         />
       </div>
 
-      <div className=" 2xl:w-9/12 xl:w-screen ml-auto flex justify-center mt-12 pb-5  ">
+      <div className=" 2xl:w-9/12 xl:w-screen ml-auto flex justify-center lg:mb-2 mt-5  pb-5  ">
         <Button
           writing="More Projects Available on Github"
           a="https://github.com/DKapteyn"
