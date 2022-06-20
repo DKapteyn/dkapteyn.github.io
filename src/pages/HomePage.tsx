@@ -10,8 +10,8 @@ export default function HomePage() {
     <div className="backgroundImage lg:bg-left grid place-content-center ">
       <HomeMain />
       <div className=" flex gap-4 mt-6">
-        <Button writing="Check out my work" link={"/projects"} />
-        <Button writing="Contact me" link={"/contact"} />
+        <Button text="Check out my work" link={"/projects"} />
+        <Button text="Contact me" link={"/contact"} />
       </div>
       {/*throws parsing issue but is still best practive to have size in relative units for accessibility */}
       <IconContext.Provider value={{ color: "#586369", size: "2rem" }}>

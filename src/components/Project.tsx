@@ -21,7 +21,7 @@ export default function Project({
       onMouseEnter={() => setLinksOn(true)}
       onMouseLeave={() => setLinksOn(false)}
       className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg bg-[#d6dadd]
-      rounded-md  lg:mt-5  lg:first:mt-5  first:mt-20 mt-10  mx-3"
+      rounded-md    mx-3"
     >
       <div className="flex  flex-col justify-between">
         <div className="flex flex-col items-center ">

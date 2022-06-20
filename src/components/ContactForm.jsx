@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function ContactUs() {
+export default function ContactForm({ setModalOpen }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,6 +16,7 @@ export default function ContactUs() {
       )
       .then(
         (result) => {
+          setModalOpen(true);
           console.log(result.text);
         },
         (error) => {
@@ -45,7 +46,7 @@ export default function ContactUs() {
         />
         <label>Email</label>
         <input
-          className="formText"
+          className="formText "
           type="email"
           name="user_email"
           placeholder="How can I connect with you?"

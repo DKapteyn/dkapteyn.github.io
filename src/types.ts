@@ -1,5 +1,5 @@
 export type buttonT = {
-  writing: string;
+  text: string;
   link?: string;
   a?: string;
 };
@@ -11,4 +11,13 @@ export type projectT = {
   img: string;
   github: string;
   website: string;
+};
+
+export type AboutImgT = {
+  myPicture: string;
+};
+
+export type ModalT = {
+  setModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  modalOpen: boolean;
 };

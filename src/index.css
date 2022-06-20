@@ -11,7 +11,7 @@ body {
 
   background-repeat: no-repeat;
   transition-duration: 1s;
-  @apply min-h-screen bg-bottom;
+  @apply min-h-screen bg-bottom pt-14;
 }
 
 .listItem {
@@ -32,7 +32,7 @@ body {
 }
 
 .formText {
-  @apply w-[29.0625rem] mx-auto  mb-8 shadow-md px-2;
+  @apply w-[29.0625rem] mx-auto  mb-8 shadow-md px-2 outline-none border-2  focus:border-gray-500 focus:border-2;
 }
 
 .button {

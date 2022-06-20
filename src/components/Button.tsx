@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { buttonT } from "../types";
 
-export default function Button({ writing, link, a }: buttonT) {
+export default function Button({ text, link, a }: buttonT) {
   return (
     <>
       {a && (
@@ -11,13 +11,13 @@ export default function Button({ writing, link, a }: buttonT) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {writing}
+          {text}
         </a>
       )}
 
       {link && (
         <Link className="button" to={link}>
-          {writing}
+          {text}
         </Link>
       )}
     </>

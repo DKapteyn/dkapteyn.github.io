@@ -4,12 +4,12 @@ import Project from "../components/Project";
 export default function ProjectPage() {
   return (
     <div className="backgroundImage  ">
-      <div className="flex lg:flex-row flex-col xl:w-screen  2xl:w-9/12  ml-auto lg:pt-10  justify-center items-center">
+      <div className="flex lg:flex-row flex-col xl:w-screen  2xl:w-9/12  ml-auto  gap-8 lg:gap-0 justify-center items-center">
         <Project
           title="Coffee Marketing Site"
           para="This three page site shows design and includes active animation and includes a price calculation and checkout"
           skills={["HTML5", "Sass", "React"]}
-          img="/images/Coffee Marketing Site.png"
+          img="/images/Coffee Marketing Site2.png"
           github="https://github.com/DKapteyn/Coffee-website"
           website="https://dkapteyn.github.io/Coffee-website/"
         />
@@ -34,7 +34,7 @@ export default function ProjectPage() {
 
       <div className=" 2xl:w-9/12 xl:w-screen ml-auto flex justify-center lg:mb-2 mt-5  pb-5  ">
         <Button
-          writing="More Projects Available on Github"
+          text="More Projects Available on Github"
           a="https://github.com/DKapteyn"
         />
       </div>
