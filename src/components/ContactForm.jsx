@@ -25,23 +25,47 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="h-96 w-96 border-2 border-black rounded-2xl">
+    <div className="w-[33.125rem] h-[34.375rem] py-3  rounded-3xl drop-shadow-md shadow-md bg-[#d6dadd]">
+      <p className="flex justify-center mb-6  ">
+        Thanks for coming to my site. It would be great to hear from you!
+      </p>
+
       <form
-        className="flex flex-col text-xl text-center"
+        className="flex flex-col text-center"
         ref={form}
         onSubmit={sendEmail}
       >
         <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
         <input
-          className="border-2 border-black w-max p-2 rounded-xl"
-          type="submit"
-          value="Send"
+          className="formText"
+          type="text"
+          name="user_name"
+          placeholder="What's your name?"
+          required
         />
+        <label>Email</label>
+        <input
+          className="formText"
+          type="email"
+          name="user_email"
+          placeholder="How can I connect with you?"
+          required
+        />
+        <label>Message</label>
+        <textarea
+          className="formText h-48"
+          name="message"
+          placeholder="Anything to say?"
+          required
+        />
+        <div>
+          <input
+            className=" shadow-md  bg-[#b0b0ab]
+            w-40   p-2 rounded-xl cursor-pointer "
+            type="submit"
+            value="Send"
+          />
+        </div>
       </form>
     </div>
   );

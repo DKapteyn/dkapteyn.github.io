@@ -18,13 +18,13 @@ export default function Project({
     <div
       onMouseEnter={() => setLinksOn(true)}
       onMouseLeave={() => setLinksOn(false)}
-      className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] border-2 border-darkGrey 
+      className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] shadow-md bg-[#d6dadd]
       rounded-md  mt-10 first:mt-20 lg:mt-20 mx-3"
     >
       <div className="flex  flex-col justify-between">
         <div className="flex flex-col items-center ">
-          <div className="h-3/5 p-5">
-            <img className="mt-2" src={img} alt="project" />
+          <div className="px-2 h-56">
+            <img className="mt-2 rounded-md" src={img} alt="project" />
           </div>
           <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
           <p className="text-center mb-4 ">{para}</p>
@@ -40,7 +40,7 @@ export default function Project({
       </div>
 
       {linksOn && (
-        <div className="absolute grid place-content-center bg-darkGrey/80 top-0 bottom-0 right-0 left-0">
+        <div className="absolute grid place-content-center rounded-md bg-black/40 top-0 bottom-0 right-0 left-0">
           <IconContext.Provider value={{ color: "white", size: "2rem" }}>
             <div className="flex gap-8">
               <a

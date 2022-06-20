@@ -30,4 +30,8 @@ body {
 .has-tooltip:hover .tooltip {
   @apply visible z-50;
 }
+
+.formText {
+  @apply w-[29.0625rem] mx-auto  mb-8 shadow-md px-2;
+}
 @tailwind utilities;
