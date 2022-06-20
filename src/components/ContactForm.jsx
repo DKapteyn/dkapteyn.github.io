@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function ContactForm({ setModalOpen }) {
+export default function ContactForm({ setModalOpen, setModalContent }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,12 +14,14 @@ export default function ContactForm({ setModalOpen }) {
         form.current,
         "HjEOV0u1lTe5hSdJT"
       )
+      .then(setModalOpen(true))
       .then(
         (result) => {
-          setModalOpen(true);
+          setModalContent("success");
           console.log(result.text);
         },
         (error) => {
+          setModalContent("failed");
           console.log(error.text);
         }
       );
@@ -28,7 +30,7 @@ export default function ContactForm({ setModalOpen }) {
   return (
     <div className="w-[33.125rem] h-[34.375rem] py-3  rounded-3xl drop-shadow-md shadow-md bg-[#d6dadd]">
       <p className="flex justify-center mb-6  ">
-        Thanks for coming to my site. It would be great to hear from you!
+        Hope you enjoyed my site. It would be great to hear from you!
       </p>
 
       <form
@@ -65,6 +67,7 @@ export default function ContactForm({ setModalOpen }) {
             w-40   p-2 rounded-xl cursor-pointer "
             type="submit"
             value="Send"
+            onClick={() => setModalContent("")}
           />
         </div>
       </form>

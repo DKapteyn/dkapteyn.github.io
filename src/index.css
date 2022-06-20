@@ -24,7 +24,7 @@ body {
 }
 
 .tooltip {
-  @apply invisible absolute;
+  @apply invisible absolute grid place-items-start rounded shadow-lg p-1 bg-darkGrey/90 border-2 border-white text-white  -mt-[3.5rem] w-[3.5rem] text-xs;
 }
 
 .has-tooltip:hover .tooltip {

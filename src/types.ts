@@ -20,4 +20,5 @@ export type AboutImgT = {
 export type ModalT = {
   setModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   modalOpen: boolean;
+  content?: string;
 };
