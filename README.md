@@ -17,4 +17,3 @@ I am a frontend developer with a passion for building fast and beautiful front e
 
 
 ![Portfoliomain](https://user-images.githubusercontent.com/86522409/174882811-758e8019-dd02-43b9-be1e-ab049b71cd65.png)
->>>>>>> 279ff5ecd504d8f636262935d991531891eff714
