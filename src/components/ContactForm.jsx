@@ -28,7 +28,7 @@ export default function ContactForm({ setModalOpen, setModalContent }) {
   };
 
   return (
-    <div className="w-[33.125rem] h-[34.375rem] py-3  rounded-3xl drop-shadow-md shadow-md bg-[#d6dadd]">
+    <div className="w-max-[33.125rem]  h-max-[34.375rem] h-min-full w-min-full py-3  rounded-3xl drop-shadow-md shadow-md bg-[#d6dadd]">
       <p className="flex justify-center mb-6  ">
         Hope you enjoyed my site. It would be great to hear from you!
       </p>
