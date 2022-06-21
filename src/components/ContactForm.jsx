@@ -19,6 +19,7 @@ export default function ContactForm({ setModalOpen, setModalContent }) {
         (result) => {
           setModalContent("success");
           console.log(result.text);
+          e.target.reset();
         },
         (error) => {
           setModalContent("failed");
