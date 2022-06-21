@@ -11,5 +11,3 @@
 - Javascript
 
 I am a frontend developer with a passion for building fast and beautiful front end experiences and am excited to take my skills and work on larger projects!
-
-<img src="./images/Portfoliomain.png" alt="website main page">
