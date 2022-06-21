@@ -1,6 +1,6 @@
 # David Kapteyn Portfolio Webpage
 
-## This multi page website is repository of my projects to show my skills as a Frontend Developer including:
+## This multi page website is repository of projects to show my skills as a Frontend Developer including:
 
 - React
 - Typescript
