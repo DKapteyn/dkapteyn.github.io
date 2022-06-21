@@ -3,16 +3,11 @@ import { IconContext } from "react-icons/lib";
 import { ModalT } from "../types";
 
 export default function Modal({ setModalOpen, modalOpen, content }: ModalT) {
-  function clearPage() {
-    setModalOpen(false);
-    window.location.reload();
-  }
-
   return (
     <>
       {modalOpen && content === "success" ? (
         <div
-          onClick={() => clearPage()}
+          onClick={() => setModalOpen(false)}
           className="absolute top-0 bottom-0 right-0 left-0 grid place-items-center bg-black/50"
         >
           <div className="  h-56 w-56 bg-gray-400/80 rounded-lg border-2 flex justify-center items-center flex-col">
