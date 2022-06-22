@@ -11,6 +11,7 @@ export default function Project({
   img,
   github,
   website,
+  framework,
 }: projectT) {
   const [linksOn, setLinksOn] = useState(false);
 
@@ -23,17 +24,22 @@ export default function Project({
       className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg bg-[#d6dadd]
       rounded-md    mx-3"
     >
-      <div className="flex  flex-col justify-between">
+      <div className="flex  flex-col justify-between px-2">
         <div className="flex flex-col items-center ">
-          <div className="px-2 lg:h-48 h-max">
+          <div className=" lg:h-48 h-max">
             <img className="mt-2 rounded-md" src={img} alt="project" />
           </div>
           <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
           <p className="text-center mb-4 ">{para}</p>
         </div>
         <div className="flex flex-col items-center mt-2 h-32 mb-max-10">
-          <p className="font-bold mb-4">Skills used in this project</p>
-          <ul className="flex flex-wrap gap-x-4 gap-y-2 px-14  justify-center ">
+          <p className="font-bold mb-2">Skills used in this project</p>
+          {framework && <p className="listItem mb-2">{framework}</p>}
+          <ul
+            className={`flex gap-4 justify-center ${
+              framework === undefined ? "pt-6" : ""
+            } `}
+          >
             {skills.map((skill, index) => (
               <li key={`${id}-${index}`} className="listItem">
                 {skill}

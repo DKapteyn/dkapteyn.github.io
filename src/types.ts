@@ -11,6 +11,7 @@ export type projectT = {
   img: string;
   github: string;
   website: string;
+  framework?: string;
 };
 
 export type AboutImgT = {
