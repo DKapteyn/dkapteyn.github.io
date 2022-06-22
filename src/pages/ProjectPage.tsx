@@ -17,7 +17,7 @@ export default function ProjectPage() {
         />
         <Project
           title="Space Info Site"
-          para="This 8 page information app uses a data.js file to generate the pages with reusable components. Each page is fully interctive and updates colors and pictures depending on user input. This project includes dynamic styling and animations."
+          para="This 8 page information app uses a data.js file to generate the pages with reusable components. Each page is fully interactive and updates colors and pictures depending on user input. This project includes dynamic styling and animations."
           framework="React"
           skills={["Javascript", "Sass", "HTML5"]}
           img="/images/planet-app.png"
