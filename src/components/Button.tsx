@@ -6,7 +6,7 @@ export default function Button({ text, link, a }: buttonT) {
     <>
       {a && (
         <a
-          className="button"
+          className="button "
           href={a}
           target="_blank"
           rel="noopener noreferrer"
@@ -16,7 +16,7 @@ export default function Button({ text, link, a }: buttonT) {
       )}
 
       {link && (
-        <Link className="button" to={link}>
+        <Link className="button " to={link}>
           {text}
         </Link>
       )}

@@ -7,7 +7,7 @@ export default function Navbar() {
   const [dropDown, setDropDown] = useState(false);
 
   return (
-    <div className="text-white bg-black w-screen fixed text-xl flex justify-between sm:px-24 px-4 h-12 items-center z-20 ">
+    <div className="text-white bg-black w-screen fixed text-xl flex justify-between sm:px-24 px-10 h-12 items-center z-20 ">
       <h2>David Kapteyn</h2>
       <div>
         <nav

@@ -21,12 +21,12 @@ export default function Project({
     <div
       onMouseEnter={() => setLinksOn(true)}
       onMouseLeave={() => setLinksOn(false)}
-      className="relative flex lg:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg bg-[#d6dadd]
-      rounded-md    mx-3"
+      className="relative flex xl:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg bg-[#d6dadd]
+      rounded-md mx-3"
     >
       <div className="flex  flex-col justify-between px-2">
         <div className="flex flex-col items-center ">
-          <div className=" lg:h-48 h-max">
+          <div className=" xl:h-48 h-max">
             <img className="mt-2 rounded-md" src={img} alt="project" />
           </div>
           <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
