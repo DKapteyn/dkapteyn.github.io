@@ -23,3 +23,8 @@ export type ModalT = {
   modalOpen: boolean;
   content?: string;
 };
+
+export type skillT = {
+  skill: string;
+  skillImg: string;
+};

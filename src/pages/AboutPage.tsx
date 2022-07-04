@@ -1,6 +1,7 @@
-import AboutCard from "../components/AboutCard";
+import AboutCard from "../components/About/AboutCard";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import SkillsContainer from "../components/Skills/SkillsContainer";
 
 export default function AboutPage() {
   return (
@@ -11,7 +12,8 @@ export default function AboutPage() {
         className=" h-full w-screen lg:w-9/12 xl:w-8/12 ml-auto "
       >
         <AboutCard />
-        <div className="flex justify-center mt-6 lg:mt-10 mb-8">
+        <SkillsContainer />
+        <div className="flex justify-center mt-6 lg:mt-6 mb-8">
           <Button link="/projects" text="See what I've done" />
         </div>
       </motion.div>

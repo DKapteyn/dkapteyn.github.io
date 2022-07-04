@@ -17,11 +17,9 @@ export default function AboutText() {
       <p>
         Ever since my first “Hello World” I have been fascinated to see what I
         can make for the web. Since then I have been working towards building
-        more and more interesting projects with different technologies.
-        Including React, Javascript, Typescript, Tailwind, Sass, CSS3 and HTML5.
-        It has been wonderful to be able to make beautiful and responsive
-        projects. I am excited to keep moving forward and to work on bigger
-        things.
+        more and more interesting projects with different technologies. It has
+        been wonderful to be able to make beautiful and responsive projects. I
+        am excited to keep moving forward and to work on bigger things.
       </p>
     </div>
   );

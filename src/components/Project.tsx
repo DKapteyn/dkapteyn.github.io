@@ -21,8 +21,8 @@ export default function Project({
     <div
       onMouseEnter={() => setLinksOn(true)}
       onMouseLeave={() => setLinksOn(false)}
-      className="relative flex xl:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg bg-[#d6dadd]
-      rounded-md mx-3"
+      className="relative flex xl:w-[25rem] h-[35rem] max-w-[30rem] shadow-lg
+     mx-3"
     >
       <div className="flex  flex-col justify-between px-2">
         <div className="flex flex-col items-center ">
@@ -50,7 +50,7 @@ export default function Project({
       </div>
 
       {linksOn && (
-        <div className="absolute grid place-content-center rounded-md bg-black/40 top-0 bottom-0 right-0 left-0">
+        <div className="absolute grid place-content-center rou bg-black/40 top-0 bottom-0 right-0 left-0">
           {/*throws parsing issue but is still best practive to have size in relative units for accessibiliy */}
           <IconContext.Provider value={{ color: "white", size: "2rem" }}>
             <div className="flex gap-8 text-center">

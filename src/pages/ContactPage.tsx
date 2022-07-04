@@ -1,4 +1,4 @@
-import ContactForm from "../components/ContactForm.jsx";
+import ContactForm from "../components/Contact/ContactForm.jsx";
 import Modal from "../components/Modal";
 import { useState } from "react";
 import { motion } from "framer-motion";

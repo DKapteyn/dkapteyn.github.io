@@ -1,4 +1,4 @@
-import { AboutImgT } from "../types";
+import { AboutImgT } from "../../types";
 
 export default function AboutImg({ myPicture }: AboutImgT) {
   return (
