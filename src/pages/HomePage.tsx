@@ -19,7 +19,7 @@ export default function HomePage() {
           <Button text="Check out my work" link={"/projects"} />
           <Button text="Contact me" link={"/contact"} />
         </div>
-        {/*throws parsing issue but is still best practive to have size in relative units for accessibility */}
+        {/*throws parsing issue but is still best practice to have size in relative units for accessibility */}
         <IconContext.Provider value={{ color: "#586369", size: "2rem" }}>
           <div className="flex gap-6 mt-6 justify-center">
             <a
@@ -31,7 +31,7 @@ export default function HomePage() {
               <BsGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/david-kapteyn-11b4b361/"
+              href="https://ca.linkedin.com/in/david-kapteyn-11b4b361"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:bg-black/20 rounded-full"

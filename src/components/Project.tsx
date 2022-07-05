@@ -11,7 +11,6 @@ export default function Project({
   img,
   github,
   website,
-  framework,
 }: projectT) {
   const [linksOn, setLinksOn] = useState(false);
 
@@ -33,19 +32,23 @@ export default function Project({
           <p className="text-center mb-4 ">{para}</p>
         </div>
         <div className="flex flex-col items-center mt-2 h-32 mb-max-10">
-          <p className="font-bold mb-2">Skills used in this project</p>
-          {framework && <p className="listItem mb-2">{framework}</p>}
-          <ul
-            className={`flex gap-4 justify-center ${
-              framework === undefined ? "pt-6" : ""
-            } `}
-          >
+          <p className="font-bold ">Skills used in this project</p>
+
+          <div className="flex gap-6 leading-4">
             {skills.map((skill, index) => (
-              <li key={`${id}-${index}`} className="listItem">
-                {skill}
-              </li>
+              <div
+                key={`${id}-${index}`}
+                className="flex flex-col items-center w-14 text-center "
+              >
+                <img
+                  className="w-12 mt-2 mb-2"
+                  src={skill.img}
+                  alt={skill.name}
+                />
+                <p>{skill.name}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
 

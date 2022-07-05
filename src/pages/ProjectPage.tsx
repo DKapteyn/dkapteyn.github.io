@@ -15,8 +15,14 @@ export default function ProjectPage() {
             title="Coffee Marketing Site"
             para="This 3 page marketing website includes dynamic styling and an 
           interactive ordering form. It also includes a checkout page that updates based on the input of the user. "
-            framework="React"
-            skills={["Javascript", "Sass", "HTML5"]}
+            skills={[
+              { img: "./images/logos/react-svgrepo-com.svg", name: "React" },
+              {
+                img: "./images/logos/javascript-logo-svgrepo-com.svg",
+                name: "Javascript",
+              },
+              { img: "./images/logos/sass-svgrepo-com.svg", name: "Sass" },
+            ]}
             img="/images/Coffee Marketing Site2.png"
             github="https://github.com/DKapteyn/Coffee-website"
             website="https://dkapteyn.github.io/Coffee-website/"
@@ -24,8 +30,14 @@ export default function ProjectPage() {
           <Project
             title="Space Info Site"
             para="This 8 page information app uses a data.js file to generate the pages with reusable components. Each page is fully interactive and updates colors and pictures depending on user input. This project includes dynamic styling and animations."
-            framework="React"
-            skills={["Javascript", "Sass", "HTML5"]}
+            skills={[
+              { img: "./images/logos/react-svgrepo-com.svg", name: "React" },
+              {
+                img: "./images/logos/javascript-logo-svgrepo-com.svg",
+                name: "Javascript",
+              },
+              { img: "./images/logos/sass-svgrepo-com.svg", name: "Sass" },
+            ]}
             img="/images/planet-app.png"
             github="https://github.com/DKapteyn/Planet-info-site"
             website="https://dkapteyn.github.io/Planet-info-site/"
@@ -34,8 +46,18 @@ export default function ProjectPage() {
             title="Interactive Comment Section"
             para='This comment section is a full "CRUD" application with the ability to create, edit and delete your 
           comments.'
-            framework="React"
-            skills={["Typescript", "Tailwind", "HTML5"]}
+            skills={[
+              { img: "./images/logos/react-svgrepo-com.svg", name: "React" },
+              {
+                img: "./images/logos/typescript-logo-svgrepo-com.svg",
+                name: "Typescript",
+              },
+              {
+                img: "./images/logos/tailwindcss-icon-svgrepo-com.svg",
+                name: "Tailwind CSS",
+              },
+            ]}
+            /*{["Typescript", "Tailwind", "HTML5"]}*/
             img="/images/commentSection.png"
             github="https://github.com/DKapteyn/comment-section"
             website="https://dkapteyn.github.io/comment-section/"

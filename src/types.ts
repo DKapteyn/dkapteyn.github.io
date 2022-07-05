@@ -7,11 +7,10 @@ export type buttonT = {
 export type projectT = {
   title: string;
   para: string;
-  skills: string[];
+  skills: { img: string; name: string }[];
   img: string;
   github: string;
   website: string;
-  framework?: string;
 };
 
 export type AboutImgT = {
