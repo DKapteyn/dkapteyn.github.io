@@ -28,7 +28,7 @@ export default function Project({
           <div className=" xl:h-48 h-max">
             <img className="mt-2 rounded-md" src={img} alt="project" />
           </div>
-          <h4 className="text-xl font-bold mt-3 mb-3">{title}</h4>
+          <h4 className="text-xl font-bold lg:mt-6 mb-3">{title}</h4>
           <p className="text-center mb-4 ">{para}</p>
         </div>
         <div className="flex flex-col items-center mt-2 h-32 mb-max-10">

@@ -13,7 +13,7 @@ export default function ProjectPage() {
         <div className="flex xl:flex-row flex-col xl:w-screen  2xl:w-9/12  ml-auto  gap-8 xl:gap-0 justify-center items-center">
           <Project
             title="Coffee Marketing Site"
-            para="This 3 page marketing website includes dynamic styling and an 
+            para="This 3 page marketing website includes responsive styling and an 
           interactive ordering form. It also includes a checkout page that updates based on the input of the user. "
             skills={[
               { img: "./images/logos/react-svgrepo-com.svg", name: "React" },
@@ -29,7 +29,7 @@ export default function ProjectPage() {
           />
           <Project
             title="Space Info Site"
-            para="This 8 page information app uses a data.js file to generate the pages with reusable components. Each page is fully interactive and updates colors and pictures depending on user input. This project includes dynamic styling and animations."
+            para="This 8 page information app uses a data.js file to generate the pages with reusable components. Each page is fully interactive and updates colors and pictures depending on user input. This project includes responsive styling and animations."
             skills={[
               { img: "./images/logos/react-svgrepo-com.svg", name: "React" },
               {
